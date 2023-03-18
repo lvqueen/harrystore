@@ -9,6 +9,7 @@
 	--orange: #F29D52;
 	--black: #0b0b0b;
 	--white: #ffffff;
+    --border:#71301c;
 	margin: 0px;
 	padding: 0px;
 
@@ -45,14 +46,80 @@
 	transition: 500ms;
 }
 /*-------------------------------here starts the body -----------------------------------*/
-
+#body {
+    align-items: center;
+    justify-content: center;
+}
 
 #title {
     color: var(--brown);
+    background-color: var(--light-yellow);
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 8vh;
+    height: 10vh;
     display: flex;
 }
+#main {
+    background-color: var(--light-yellow);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+    width: 100vw;
+    gap: 30px;
+}
+#options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 60vw;
 
+}
+.btn-img {
+    height: 20vh;
+    width: auto;
+    
+}
+#harry {
+    background-color: var(--white);
+    border: 8px solid var(--border);
+    border-radius: 50%;
+}
+#hermione {
+    background-color: var(--white);
+    border: 8px solid var(--border);
+    border-radius: 50%;
+}
+
+.opt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+.btn {
+    height: 6vh;
+    background-color: var(--brown);
+    color: var(--white);
+    width: 7vw;
+    border-radius: 5px;
+    border: none;
+}
+#score {
+    height: 10vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid var(--brown);
+    border-bottom: 2px solid var(--brown);
+}
+.scr-itm {
+    height: 9vh;
+    width: 10vw;
+    border-radius: 10px;
+    border: solid 1px var(--brown);
+}
